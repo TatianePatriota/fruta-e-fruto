@@ -1,0 +1,80 @@
+.banner {
+    position: relative;
+}
+
+.banner-imagem {
+    background: url(../img/banner.jpg) no-repeat center / cover;
+    width: 100vw;
+}
+
+.banner-titulo {
+    width: 100%;
+    color: #FDFDFD;
+    font-family: Pacifico, cursive;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.sobre {
+    text-align: center;
+}
+
+.sobre-titulo {
+    font-family: Pacifico, cursive;
+    color: #8d0606;
+}
+
+.sobre-descricao {
+    color: #595959;
+    font-weight: 100;
+}
+
+
+@media screen and (min-width: 0) {
+    .banner-titulo {
+        font-size: 3rem;
+    }
+
+    .banner-imagem {
+        height: calc(100vh - 51px);
+    }
+
+    .sobre {
+        padding: 2.5rem 1rem;
+    }
+
+    .sobre-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-descricao {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner-titulo{
+        font-size: 5.0625rem;
+    }
+
+    .banner-imagem {
+        height: calc(100vh - 72px);
+    }
+
+    .sobre {
+        padding: 2.5rem;
+    }
+
+    .sobre-titulo {
+        font-size: 3.1875rem;
+    }
+
+    .sobre-descricao {
+        font-size: 1.75rem;
+    }
+
+}
